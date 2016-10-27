@@ -3,6 +3,13 @@
     src: url("digital-7.regular.ttf"); /*.ttf ali .otf*/
 }
 
+/*.color-1 {color: #ffe043;} ans
+.color-2 {color: #fbff00;} eval
+.color-3 {color: #f5f173;} operator
+.color-4 {color: #f97139;} rem
+.color-5 {color: #54f589;} screen
+.color-6 {color: #339bcb;} body*/
+
 * {
     box-sizing: border-box;
 }
@@ -51,6 +58,7 @@
     background: #8bf4ce;
     border: none;
     border-radius: 4px;
+    overflow: hidden;
 }
 
 #exp-bfor {
@@ -116,4 +124,13 @@
 
 .btn:hover {
     cursor: pointer;
+}
+
+#eq {
+    background-color: #f5f173;
+}
+
+.rem {
+    background-color: #f97139;
+    color: white;
 }
