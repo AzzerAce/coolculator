@@ -24,7 +24,7 @@
         });
 
         $('#prefix').on('click', function() {
-            if ($textfield.val() != '' && ) {
+            if ($textfield.val() != '') {
                 var num = parseFloat($textfield.val());
                 $textfield.val(-1 * num).focus();
             }
