@@ -71,6 +71,27 @@
             basicOp('%');
         });
 
+        $('#fac').on('click', function() {
+            var n = parseInt($textfield.val());
+            num1 = factorial(n);
+            $textUp.val(num1 + '   ');
+            $textfield.val('').focus();
+        });
+
+        $('#root').on('click', function() {
+            var n = parseInt($textfield.val());
+            num1 = Math.sqrt(n);
+            $textUp.val(num1 + '   ');
+            $textfield.val('').focus();
+        });
+
+        $('#square').on('click', function() {
+            var n = parseInt($textfield.val());
+            num1 = n * n;
+            $textUp.val(num1 + '   ');
+            $textfield.val('').focus();
+        });
+
         $('#history').on('click', function() {
             $textUp.val('');
             num2 = 0;
@@ -176,6 +197,11 @@
                     + field.value.substring(endPos, field.value.length);
             }
             return startPos;
+    }
+
+    function factorial(n) {
+        if (n == 0) return 1;
+        return n * factorial(n-1);
     }
 
     function blink() {

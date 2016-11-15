@@ -126,11 +126,27 @@
     cursor: pointer;
 }
 
+#square, #fac, #root, #mod, #mult, #div, #add, #sub, #history {
+    background-color: #CCE5FF;
+}
+
+#square:active, #fac:active, #root:active, #mod:active, #mult:active, #div:active, #add:active, #sub:active, #history:active {
+    background-color: #B8CEE6;
+}
+
 #eq {
     background-color: #f5f173;
+}
+
+#eq:active {
+    background-color: #E2DE6F;
 }
 
 .rem {
     background-color: #f97139;
     color: white;
+}
+
+.rem:active {
+    background-color: #E16834;
 }
